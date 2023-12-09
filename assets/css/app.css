@@ -50,3 +50,7 @@ dl > dt {
 dl > dd, dl > dt {
   margin-bottom: 0px;
 }
+
+footer {
+  padding: 20px 0px;
+}

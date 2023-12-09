@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container mx-auto">
     <h2>
       <Icon name="mdi:text-box-search-outline" />
       NPI Search
@@ -231,23 +231,27 @@
         </tbody>
       </table>
 
-      <div class="clearfix">
-        <a href="#results" class="button button-outline cursor-pointer float-left"
-          v-on:click="page--"
-          v-if="page > 1"
-          :class="{ 'cursor-progress': isLoading }"
-          :disabled="isLoading">
-          <Icon name="mdi:chevron-left" />
-          Previous
-        </a>
-        <a href="#results" class="button button-outline cursor-pointer float-right"
-          v-on:click="page++"
-          v-if="results.length == paging && paging * page < 1200"
-          :class="{ 'cursor-progress': isLoading }"
-          :disabled="isLoading">
-          Next
-          <Icon name="mdi:chevron-right" />
-        </a>
+      <div class="grid grid-cols-2">
+        <div>
+          <a href="#results" class="button button-outline cursor-pointer"
+            v-on:click="page--"
+            v-if="page > 1"
+            :class="{ 'cursor-progress': isLoading }"
+            :disabled="isLoading">
+            <Icon name="mdi:chevron-left" />
+            Previous
+          </a>
+        </div>
+        <div>
+          <a href="#results" class="button button-outline cursor-pointer float-right"
+            v-on:click="page++"
+            v-if="results.length == paging && paging * page < 1200"
+            :class="{ 'cursor-progress': isLoading }"
+            :disabled="isLoading">
+            Next
+            <Icon name="mdi:chevron-right" />
+          </a>
+        </div>
       </div>
     </div>
 
