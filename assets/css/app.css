@@ -1,0 +1,52 @@
+html,
+body {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin-top: 80px;
+}
+
+.alert {
+  padding: 15px 20px;
+  background-color: #c7c7c7;
+  border: 1px solid #b6b6b6;
+  border-radius: 5px;
+}
+
+.alert.error {
+  background-color: #ffb1ab;
+  border: 1px solid #f44336;
+  color: #111;
+}
+
+small.validation-error {
+  color: #f44336;
+  position: relative;
+  bottom: 10px;
+  font-size: .7em;
+  display: block;
+}
+
+.icon {
+  position: relative;
+  bottom: .1em;
+}
+
+#paging {
+  font-size: .5em;
+  position: relative;
+  bottom: 10px;;
+}
+
+dl > dt {
+  font-weight: 600;
+}
+
+dl > dd, dl > dt {
+  margin-bottom: 0px;
+}
