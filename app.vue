@@ -21,7 +21,7 @@
           </li>
 
           <li>
-            <a href="/about">About</a>
+            <NuxtLink to="https://npiregistry.cms.hhs.gov/search" target="_blank">Registry</NuxtLink>
           </li>
         </ul>
       </nav>
