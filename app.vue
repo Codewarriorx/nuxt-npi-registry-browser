@@ -1,5 +1,4 @@
 <script>
-  // import 'milligram/dist/milligram.min.css';
   import 'assets/css/main.scss'
   import 'assets/css/header.css';
   import 'assets/css/app.css';
